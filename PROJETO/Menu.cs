@@ -26,5 +26,11 @@ namespace PROJETO
         {
             Close();
         }
+        private void EntradasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Entrada entrada = new Entrada();
+            entrada.ShowDialog();
+        }
     }
 }
+
