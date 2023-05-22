@@ -21,7 +21,7 @@ namespace PROJETO
         public void Inserir(EntradaFin colab)
         {
             Cmd.Connection = Con.ReturnConnection();
-            Cmd.CommandText = @"INSERT INTO Entrada VALUES (@valor, @data, @descricao, @tipo)";
+            Cmd.CommandText = @"INSERT INTO EntradaFin VALUES (@valor, @data, @descricao, @tipo)";
 
             Cmd.Parameters.AddWithValue("@valor", colab.Valor);
             Cmd.Parameters.AddWithValue("@data", colab.Data);
@@ -31,7 +31,7 @@ namespace PROJETO
 
             try
             {
-                //Insere o cliente
+                //Insere a entrada
                 Cmd.ExecuteNonQuery();
             }
             catch (Exception err)
@@ -47,7 +47,7 @@ namespace PROJETO
         public List<EntradaFin> ListarEntradas()
         {
             Cmd.Connection = Con.ReturnConnection();
-            Cmd.CommandText = "SELECT * FROM Entrada";
+            Cmd.CommandText = "SELECT * FROM EntradaFin";
 
             List<EntradaFin> listaDeEntrada = new List<EntradaFin>(); //Instancio a list com o tamanho padrão.
             try

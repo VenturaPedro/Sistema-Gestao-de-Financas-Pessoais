@@ -9,7 +9,7 @@ using System.Xml.Linq;
 
 namespace PROJETO
 {
-    internal class EntradaFin 
+    public class EntradaFin 
     { 
         private int _id;
         private string _valor;
