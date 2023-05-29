@@ -27,7 +27,7 @@ namespace PROJETO
             Cmd.Parameters.AddWithValue("@data", colab.Data);
             Cmd.Parameters.AddWithValue("@descricao", colab.Descricao);
             Cmd.Parameters.AddWithValue("@tipo", colab.Tipo);
-            
+
 
             try
             {

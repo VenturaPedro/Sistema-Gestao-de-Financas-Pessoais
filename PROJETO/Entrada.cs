@@ -16,7 +16,7 @@ namespace PROJETO
         public Entrada()
         {
             InitializeComponent();
-        }
+        }   
 
         private void btnMostrar_Click(object sender, EventArgs e)
         {
@@ -59,5 +59,9 @@ namespace PROJETO
             // Se não houver elementos, mesclar as colunas e exibir apenas um texto para o usuário.
         }
 
+        private void Entrada_Load(object sender, EventArgs e)
+        {
+            UpdateListView();
+        }
     }
 }

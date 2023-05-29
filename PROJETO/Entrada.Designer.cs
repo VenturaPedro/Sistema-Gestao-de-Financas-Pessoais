@@ -191,6 +191,7 @@
             this.Controls.Add(this.btnMostrar);
             this.Name = "Entrada";
             this.Text = "Cadastro de Entradas";
+            this.Load += new System.EventHandler(this.Entrada_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
