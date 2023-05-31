@@ -63,5 +63,18 @@ namespace PROJETO
         {
             UpdateListView();
         }
+
+        private void ClearFields()
+        {
+            txbValorEntrada.Clear();
+            txbDataEntrada.Clear();
+            txbDescricaoEntrada.Clear();
+            txbTipoEntrada.Clear();
+            txbValorEntrada.Focus();
+        }
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            ClearFields();
+        }
     }
 }
