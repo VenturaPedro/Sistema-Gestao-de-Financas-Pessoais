@@ -28,8 +28,14 @@ namespace PROJETO
         }
         private void EntradasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Entrada entrada = new Entrada();
+            lvEntrada entrada = new lvEntrada();
             entrada.ShowDialog();
+        }
+
+        private void saídasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            lvSaida saida = new lvSaida();
+            saida.ShowDialog();
         }
     }
 }

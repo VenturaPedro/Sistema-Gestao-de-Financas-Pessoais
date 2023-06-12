@@ -16,8 +16,8 @@ namespace PROJETO
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new FrmLogin());
-            Application.Run(new Entrada());       //se quiser ir direto pra tela de cadastro de entrada(diminui os passos de teste)
+            Application.Run(new FrmLogin());
+            //Application.Run(new lvEntrada());       //se quiser ir direto pra tela de cadastro de entrada(diminui os passos de teste)
 
             
         }

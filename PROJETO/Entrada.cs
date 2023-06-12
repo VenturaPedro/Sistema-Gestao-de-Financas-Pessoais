@@ -11,32 +11,16 @@ using System.Xml.Linq;
 
 namespace PROJETO
 {
-    internal partial class Entrada : Form
+    internal partial class lvEntrada : Form
     {
-        public Entrada()
+        public lvEntrada()
         {
             InitializeComponent();
         }   
 
         private void btnMostrar_Click(object sender, EventArgs e)
         {
-            string valor = txbValorEntrada.Text;
-            string data = txbDataEntrada.Text;
-            string descricao = txbDescricaoEntrada.Text;
-            string tipo = txbTipoEntrada.Text;
 
-            EntradaFin colab = new EntradaFin(valor, data, descricao, tipo);
-
-            try
-            {
-                EntradaDAO entradaDAO = new EntradaDAO();
-                entradaDAO.Inserir(colab);
-                UpdateListView();
-            }
-            catch (Exception erro)
-            {
-                MessageBox.Show(erro.Message, "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
         private void UpdateListView()
         {
@@ -75,6 +59,13 @@ namespace PROJETO
         private void btnLimpar_Click(object sender, EventArgs e)
         {
             ClearFields();
+        }
+
+        
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
